@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.elvira.viewControllers.MainController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="910.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/83297961_rastfr080.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="438.0" fitWidth="584.0" layoutX="55.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/1459251221_house14.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="login" layoutX="570.0" layoutY="295.0" prefHeight="40.0" prefWidth="225.0" promptText="Login" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+      <PasswordField fx:id="password" layoutX="570.0" layoutY="360.0" prefHeight="40.0" prefWidth="225.0" promptText="Password" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+      <Button fx:id="loginbtn" layoutX="633.0" layoutY="420.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="162.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Sign In" />
+      <Button fx:id="registrationbtn" layoutX="633.0" layoutY="473.0" mnemonicParsing="false" onAction="#registration" prefHeight="40.0" prefWidth="162.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Sign Up" />
+      <Label fx:id="label" layoutX="194.0" layoutY="473.0" prefHeight="40.0" prefWidth="331.0" />
+      <Text fill="#ff5b2e9d" layoutX="285.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" textAlignment="CENTER" wrappingWidth="354.49365234375">
+         <font>
+            <Font name="Algerian" size="41.0" />
+         </font>
+      </Text>
+
+
+   </children>
+</Pane>

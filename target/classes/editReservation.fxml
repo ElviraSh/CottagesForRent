@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.elvira.viewControllers.EditReservationController">
+   <children>
+      <HBox layoutX="-2.0" prefHeight="31.0" prefWidth="680.0">
+         <children>
+            <TextField fx:id="name" prefHeight="31.0" prefWidth="221.0" promptText="Name" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="number" prefHeight="31.0" prefWidth="189.0" promptText="Number" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="car" promptText="Cottage" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="issueDate" prefHeight="31.0" prefWidth="105.0" promptText="Issue" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="returnDate" prefHeight="31.0" prefWidth="96.0" promptText="Return" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+         </children>
+      </HBox>
+      <Button fx:id="saveReservationBtn" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" textFill="WHITE" layoutX="-2.0" layoutY="31.0" mnemonicParsing="false" onAction="#saveReservation" prefHeight="31.0" prefWidth="680.0" text="Save Reservation" />
+   </children>
+</Pane>

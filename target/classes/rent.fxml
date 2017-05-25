@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.elvira.viewControllers.RentController">
+   <children>
+      <HBox prefHeight="33.0" prefWidth="762.0">
+         <children>
+            <TextField fx:id="name" prefHeight="31.0" prefWidth="230.0" promptText="Name" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="number" prefHeight="31.0" prefWidth="189.0" promptText="Phone Number" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="car" prefHeight="31.0" prefWidth="248.0" promptText="Cottage" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="issueDate" prefHeight="31.0" prefWidth="108.0" promptText="Issue Date" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="returnDate" prefHeight="31.0" prefWidth="105.0" promptText="Return Date" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+         </children>
+      </HBox>
+      <HBox layoutY="33.0" prefHeight="33.0" prefWidth="762.0">
+         <children>
+            <Button fx:id="rentCarBtn" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" textFill="WHITE" mnemonicParsing="false" onAction="#rentCar" prefHeight="31.0" prefWidth="404.0" text="Rent" />
+            <Button fx:id="cancelBtn" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" textFill="WHITE" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="360.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

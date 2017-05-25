@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.elvira.viewControllers.AdminController">
+    <tabs>
+        <Tab text="All reservations">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="reservationsTable" prefHeight="615.0" prefWidth="900.0">
+
+                        </TableView>
+                        <HBox layoutX="2.0" layoutY="615.0" prefHeight="30.0" prefWidth="900.0">
+                            <children>
+                                <TextField fx:id="name" promptText="Name" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <TextField fx:id="number" promptText="Number" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <TextField fx:id="car" prefHeight="31.0" prefWidth="215.0" promptText="Cottage" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <TextField fx:id="issue" prefHeight="31.0" prefWidth="104.0" promptText="Issue" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <TextField fx:id="returndate" prefHeight="31.0" prefWidth="103.0" promptText="Return" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <Button fx:id="addbtn" mnemonicParsing="false" onAction="#addnew" prefHeight="31.0" prefWidth="102.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Add New" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                        <HBox layoutY="647.0" prefHeight="35.0" prefWidth="900.0">
+                            <children>
+                                <TextField fx:id="reservationId" promptText="Reservation ID" style="-fx-border-color: #FDBE33 #000 #D77206;" />
+                                <Button fx:id="removeReservationBtn" mnemonicParsing="false" onAction="#removeReservation" prefHeight="31.0" prefWidth="166.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Remove Reservation" textFill="WHITE" />
+                                <Button fx:id="editReservationBtn" mnemonicParsing="false" onAction="#editReservation" prefHeight="31.0" prefWidth="165.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Edit Reservation" textFill="WHITE" />
+                                <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="382.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Logout" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="All Cotteges">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="carsTable" prefHeight="618.0" prefWidth="900.0" />
+                        <HBox layoutY="616.0" prefHeight="33.0" prefWidth="900.0">
+                            <children>
+                                <TextField fx:id="carModel" prefHeight="31.0" prefWidth="135.0" promptText="Number" />
+                                <TextField fx:id="carMileage" prefHeight="31.0" prefWidth="144.0" promptText="Number of beds" />
+                                <TextField fx:id="carPower" prefHeight="31.0" prefWidth="133.0" promptText="Parking place" />
+                                <TextField fx:id="carYear" promptText="Children's area" />
+                                <TextField fx:id="carCost" promptText="Cost" />
+                                <Button fx:id="addNewCarBtn" mnemonicParsing="false" onAction="#addNewCar" prefHeight="31.0" prefWidth="114.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Add New" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                        <HBox layoutY="649.0" prefHeight="32.0" prefWidth="900.0">
+                            <children>
+                                <TextField fx:id="carId" promptText="Cottage ID" />
+                                <Button fx:id="removeCarBtn" mnemonicParsing="false" onAction="#removeCar" prefHeight="31.0" prefWidth="132.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Remove " textFill="WHITE" />
+                                <Button fx:id="editCarBtn" mnemonicParsing="false" onAction="#editCar" prefHeight="31.0" prefWidth="132.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Edit " textFill="WHITE" />
+                                <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="449.0" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" text="Logout" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

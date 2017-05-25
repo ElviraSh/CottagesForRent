@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.elvira.viewControllers.EditController">
+   <children>
+      <HBox prefHeight="31.0" prefWidth="838.0">
+         <children>
+            <TextField fx:id="model" promptText="Number" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="mileage" prefHeight="31.0" prefWidth="165.0" promptText="Number of beds" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="power" promptText="Parking place" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="year" promptText="Children's area" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+            <TextField fx:id="cost" promptText="Cost" style="-fx-border-color: #FDBE33 #000 #D77206;"/>
+         </children>
+      </HBox>
+      <Button fx:id="saveCarBtn" style="-fx-content-display: inline-block; -fx-background-color: white; -fx-border-color: #FDBE33 #000 #D77206; -fx-border-radius: 6px; -fx-background-color: linear-gradient(#F3AE0F, #E38916) #E38916; transition: 0.2s; -fx-padding: .5em 2em;" styleClass="button24" stylesheets="@css/style.css" textFill="WHITE" layoutY="31.0" mnemonicParsing="false" onAction="#saveCar" prefHeight="31.0" prefWidth="838.0" text="Save" />
+   </children>
+</Pane>
